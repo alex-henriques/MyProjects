@@ -33,6 +33,7 @@ Duplicate values are present
 If the stack is already sorted, no output is produced.
 ```
 ## Project structure
+```
 push_swap/
 ├── main.c            # Entry point, argument dispatch
 ├── parsing.c         # Stack initialization and input validation
@@ -47,13 +48,16 @@ push_swap/
 ├── push_swap.h       # Structs and prototypes
 ├── libft/            # Custom C library
 └── Makefile
+```
 
 ## Build
-bashmake        # build push_swap
+```bash
+make        # build push_swap
 make clean      # remove object files
 make fclean     # remove objects + binary
 make re         # fclean + all
 Compiled with cc -Wall -Wextra -Werror.
+```
 
 ## License
 42Luxembourg
