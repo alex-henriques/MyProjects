@@ -2,6 +2,30 @@
 
 Push_swap is a C program sorting algorithm project from 42, that sorts a stack of integers using a limited set of operations, with the fewest moves possible.
 
+
+## Build
+```bash
+make        # build push_swap
+make clean      # remove object files
+make fclean     # remove objects + binary
+make re         # fclean + all
+Compiled with cc -Wall -Wextra -Werror.
+```
+
+## Usage
+```bash
+make
+./push_swap 3 1 4 1 5 9 2 6
+# Pass numbers as separate arguments or as a single quoted string:
+bash./push_swap "3 1 4 1 5 9 2 6"
+# Error cases
+Prints Error to stdout and exits with code 1 if:
+Any argument is not a valid integer
+A value exceeds INT_MAX or INT_MIN
+Duplicate values are present 
+If the stack is already sorted, no output is produced.
+```
+
 ## How it works
 
 The program receives a list of integers as arguments and outputs to stdout the sequence of operations needed to sort them in ascending order on stack A, using a temporary stack B.
@@ -19,19 +43,7 @@ Sorting strategy:
     -> 5 elements — push the 2 smallest to B, sort the remaining 3, push back
     -> Large stacks — radix sort on normalized indices (bit-by-bit, using pb/pa passes)
 
-## Usage
-```bash
-make
-./push_swap 3 1 4 1 5 9 2 6
-# Pass numbers as separate arguments or as a single quoted string:
-bash./push_swap "3 1 4 1 5 9 2 6"
-# Error cases
-Prints Error to stdout and exits with code 1 if:
-Any argument is not a valid integer
-A value exceeds INT_MAX or INT_MIN
-Duplicate values are present 
-If the stack is already sorted, no output is produced.
-```
+
 ## Project structure
 ```
 push_swap/
@@ -48,15 +60,6 @@ push_swap/
 ├── push_swap.h       # Structs and prototypes
 ├── libft/            # Custom C library
 └── Makefile
-```
-
-## Build
-```bash
-make        # build push_swap
-make clean      # remove object files
-make fclean     # remove objects + binary
-make re         # fclean + all
-Compiled with cc -Wall -Wextra -Werror.
 ```
 
 ## License
