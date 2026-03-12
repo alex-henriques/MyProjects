@@ -1,8 +1,8 @@
 # minitalk
 
-Minitalk is a small C client-server communication program that transmits strings between processes using only UNIX signals (`SIGUSR1` and `sigusr2`).
+Minitalk is a small C client-server communication program that transmits strings between processes using only UNIX signals (`SIGUSR1` and `SIGUSR2`).
 
-## buILD
+## Build
 
 ```bash
 make
@@ -30,7 +30,7 @@ The server will print the received message to stdout.
 
 Each character is encoded bit by bit and transmitted as a sequence of signals:
 -`SIGUSR1` -> bit `1`
--`SIGUSr2` -> bit `0`
+-`SIGUSR2` -> bit `0`
 
 The client sends 8 signals per character (MSB first), followed by 8 `SIGUSR2` signals for the null terminator. The server reconstructs each character in its signal handler and prints it once all 8 bits are received.
 
