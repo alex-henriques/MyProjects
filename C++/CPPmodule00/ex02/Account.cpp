@@ -10,27 +10,25 @@ int	Account::_totalNbWithdrawals = 0;
 
 //constructor:
 Account::Account(int initial_deposit) {
-    _accountIndex = _nbAccounts; //_nbAccounts start at 0 so the first account gets index 0, second gets 1, etc
-    _amount = initial_deposit; // sets the account's balance to the initial deposit amount
-    _nbDeposits = 0; //No deposits have been made yet so we initialise it to 0
-    _nbWithdrawals = 0; // No withdrawals have been made yet so we initialise it to 0
+    _accountIndex = _nbAccounts; 
+    _amount = initial_deposit;
+    _nbDeposits = 0;
+    _nbWithdrawals = 0;
 
-    _nbAccounts++; //increments total number of accounts
-    _totalAmount += initial_deposit; //adds the account's initial deposit to the global total
+    _nbAccounts++; 
+    _totalAmount += initial_deposit;
 
-    _displayTimestamp(); //calls helper function that prints the timestamp
-    std::cout << "index:" << _accountIndex << ";"; //prints smth like Index:X; (etc) - message format
-    std::cout << "amount:" << _amount << ";"; // prints smth like amount:Y (etc) - message format
-    std::cout << "created" << std::endl; // prints "created" followed by a new line.
+    _displayTimestamp();
+    std::cout << "index:" << _accountIndex << ";";
+    std::cout << "amount:" << _amount << ";";
+    std::cout << "created" << std::endl;
     // will print like the message format seen in the logs file
 }
-
-
-//destructor: (~ -> this symbol means it's a destructor)
+//destructor
 Account::~Account(void) {
-    _displayTimestamp(); // prints current time
-    std::cout << "index:" << _accountIndex << ";"; //prints which account is being closed
-    std::cout << "amount:" << _amount << ";"; // prints how much money is left in that account
+    _displayTimestamp();
+    std::cout << "index:" << _accountIndex << ";";
+    std::cout << "amount:" << _amount << ";"; 
     std::cout << "closed" << std::endl;
 }
 
@@ -59,17 +57,17 @@ void    Account::displayAccountsInfos(void) { //summary of all accounts combined
     std::cout << "withdrawals" << _totalNbWithdrawals << std::endl;
 }
 
-// not statis member functions
+// not static member functions
 void    Account::makeDeposit(int deposit) {
     _displayTimestamp();
     std::cout << "index:" << _accountIndex << ";";
     std::cout << "p_amount:" << _amount << ";";
     std::cout <<"deposit:" << deposit << ";";
 
-    _amount += deposit; //add the deposit to the account balance
-    _nbDeposits++; //increment this account's deposit by 1
-    _totalAmount += deposit; //add the deposit to the global total (all accounts combined)
-    _totalNbDeposits++; // increment global deposit by 1. Tracks deposits across all accounts
+    _amount += deposit; 
+    _nbDeposits++; 
+    _totalAmount += deposit;
+    _totalNbDeposits++;
 
     std::cout << "account:" << _amount << ";";
     std::cout << "nb_deposits:" << _nbDeposits << std::endl;
@@ -94,11 +92,11 @@ bool    Account::makeWithdrawal(int withdrawal) { //tries to remove money from a
     return true;
 }
 
-int Account::checkAmount(void) const { //function that returns account's current balance (const means the function promises not to change anything)
+int Account::checkAmount(void) const { //returns account's current balance
     return _amount;
 }
 
-void    Account::displayStatus(void) const { //function that shows detailed info about specific account
+void    Account::displayStatus(void) const { //shows detailed info about specific account
     _displayTimestamp();
     std::cout << "index:" << _accountIndex << ";";
     std::cout << "amount:" << _amount << ";";
@@ -107,7 +105,7 @@ void    Account::displayStatus(void) const { //function that shows detailed info
 }
 
 //private member functions
-void    Account::_displayTimestamp(void) { //time stamp function -> over-mega-complicated. Send help!!
+void    Account::_displayTimestamp(void) { //time stamp function
     std::time_t now = std::time(NULL);
     std::tm *ltm = std::localtime(&now);
 
