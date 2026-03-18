@@ -4,49 +4,6 @@
 
 PhoneBook::PhoneBook() : count(0), index(0) {} //constructor: runs automatically when PhoneBook is created (check this, still have doubts about it)
 
-/*void PhoneBook::addContact() {
-    std::string fn, ln, nn, pn, ds;
-    std::cout << "First name: ";
-    std::getline(std::cin, fn);
-    std::cout << "Last name: ";
-    std::getline(std::cin, ln);
-    std::cout << "Nickname: ";
-    std::getline(std::cin, nn);
-    std::cout << "Phone Number: ";
-    std::getline(std::cin, pn);
-    std::cout << "Darkest Secret: ";
-    std::getline(std::cin, ds);
-
-    contacts[index].setContact(fn, ln, nn, pn, ds);
-    index = (index + 1) % 8;
-    if (count < 8)
-        count++;
-    std::cout << "Contact added successfully!\n";
-}*/
-
-/*void    PhoneBook::searchContact() const {
-    if (count == 0) {
-        std::cout << "No contacts stored.\n";
-        return ;
-    }
-    std::cout << "|------------------------------------------|\n";
-    std::cout << "|  Index  |First Name| Last Name| Nickname |\n";
-    std::cout << "|------------------------------------------|\n";
-    for(int i = 0; i < count; i++) {
-        contacts[i].displayShort(i);
-    }
-    std::cout << "|------------------------------------------|\n";
-    std::cout << "Enter index of contact to view: ";
-    std::string input;
-    std::getline(std::cin, input);
-    if (input.length() != 1 || input[0] < '0' || input[0] >= '0' + count) {
-        std::cout << "Invalid index.\n";
-        return ;
-    }
-    int idx = input[0] - '0';
-    contacts[idx].displayFull();
-}*/
-
 bool    PhoneBook::addContact() {
     std::string fn, ln, nn, pn, ds;
     std::cout << "First name: ";
