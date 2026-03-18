@@ -1,6 +1,6 @@
 #include "Contact.hpp"
 #include <iostream>
-#include <iomanip> //table formatting (std::setw)
+#include <iomanip>
 
 void    Contact::setContact(std::string fn, std::string ln, std::string nn,
                             std::string pn, std::string ds){
