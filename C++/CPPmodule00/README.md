@@ -66,11 +66,3 @@ make
 ```
 
 The output is compared against `19920104_091532.log` (timestamps will differ).
-
----
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42Luxembourg) 
