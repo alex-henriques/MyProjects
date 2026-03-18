@@ -45,9 +45,3 @@ libft/
 │   └── ft_*.c
 └── Makefile
 ```
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42Luxembourg)
