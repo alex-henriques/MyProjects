@@ -10,7 +10,7 @@ private:
     Weapon* weapon;
 public:
     HumanB(std::string name);
-    void    setWeapon(Weapon& weapon); //Human B doesn't always have a weapon so we divide functions
+    void    setWeapon(Weapon& weapon); //Human B doesn't always have a weapon so I divide functions
     void    attack();
 };
 
