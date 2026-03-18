@@ -64,9 +64,3 @@ fract-ol/
 ├── utils.c
 └── Makefile
 ```
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42Luxembourg)
