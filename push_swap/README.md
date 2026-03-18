@@ -61,10 +61,3 @@ push_swap/
 ├── libft/            # Custom C library
 └── Makefile
 ```
-
-## License
-42Luxembourg
-
-
-## Author
-Alexandra Henriques (alehenri - 42 Luxembourg)
