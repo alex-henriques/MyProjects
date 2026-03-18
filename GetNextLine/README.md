@@ -51,9 +51,3 @@ get_next_line/
 ├── get_next_line_bonus.c
 └── get_next_line_utils_bonus.c
 ```
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42Luxembourg)
