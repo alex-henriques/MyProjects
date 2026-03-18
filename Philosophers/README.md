@@ -62,10 +62,3 @@ philosophers/
 │   └── cleanup.c       # Mutex destruction and memory free
 └── Makefile
 ```
-
-## License
-42Luxembourg
-
-
-## Author
-Alexandra Henriques (alehenri - 42 Luxembourg)
