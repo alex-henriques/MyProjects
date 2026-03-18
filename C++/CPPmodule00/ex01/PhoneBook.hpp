@@ -11,8 +11,6 @@ private:
 
 public:
     PhoneBook(); //constructor
-    //void    addContact();  //add a new contact
-    //void    searchContact() const; //list and display contacts
     bool    addContact();
     bool    searchContact() const;
 };
