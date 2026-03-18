@@ -1,7 +1,7 @@
 #ifndef HARL_HPP
 #define HARL_HPP
 
-#include <string> // check details first otherwise keep this;
+#include <string>
 
 class   Harl {
     private:
