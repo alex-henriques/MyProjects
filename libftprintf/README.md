@@ -46,9 +46,3 @@ ft_printf/
 ├── ft_print_ptr.c      # %p
 └── Makefile
 ```
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques(alehenri - 42 Luxembourg)
