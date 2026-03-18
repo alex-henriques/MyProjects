@@ -37,14 +37,4 @@ Full operator overload suite added to `Fixed`: comparison operators (`<`, `>`, `
 ```bash
 make
 ./fixed
-```
-
----
-
-## License
-
-42Luxembourg
-
-## Author
-
-Alexandra Henriques (alehenri - 42Luxembourg) 
+``` 

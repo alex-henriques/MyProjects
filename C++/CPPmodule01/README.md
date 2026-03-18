@@ -99,11 +99,3 @@ make
 ./harlfilter WARNING
 # prints WARNING and ERROR
 ```
-
----
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42Luxembourg)

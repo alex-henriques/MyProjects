@@ -38,12 +38,3 @@ Makes `Animal` abstract by declaring `makeSound()` as a pure virtual function (`
 make
 ./abstractclass
 ```
-
----
-
-## License
-
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42Luxembourg)

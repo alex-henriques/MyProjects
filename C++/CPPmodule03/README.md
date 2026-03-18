@@ -61,11 +61,3 @@ make
        \        /
        DiamondTrap
 ```
-
----
-
-## License
-42Luxembourg
-
-## Author
-Alexandra Henriques (alehenri - 42 Luxembourg)
